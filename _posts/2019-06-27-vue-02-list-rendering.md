@@ -44,26 +44,19 @@ let arrUser = [
     ]
 ```
 
-{% captrue notice-1 %}
 
 ####RESULT
 
-```vue
-<ul>
-    <li>0</li>
-    <li>Mark Alan Ruffalo</li>
-    <li>51</li>
-</ul>
-<ul>
-    <li>1</li>
-    <li>Robert John Downey Jr</li>
-    <li>54</li>
-</ul>
-```
-
-{% endcaptrue %}
-
-<div class="notice">{{ notice-1 | markdownify }}</div>
+><ul>
+>    <li>0</li>
+>    <li>Mark Alan Ruffalo</li>
+>    <li>51</li>
+></ul>
+><ul>
+>    <li>1</li>
+>    <li>Robert John Downey Jr</li>
+>    <li>54</li>
+></ul>
 
 ---
 
@@ -83,21 +76,14 @@ let arrUser = [
 let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 ```
 
-{% captrue notice-2 %}
 
 ####RESULT
 
-```vue
-<ul>
-    <li>Mark Alan Ruffalo</li>
-    <li>51</li>
-    <li>avengers</li>
-</ul>
-```
-
-{% endcaptrue %}
-
-<div class="notice">{{ notice-2 | markdownify }}</div>
+><ul>
+>    <li>Mark Alan Ruffalo</li>
+>    <li>51</li>
+>    <li>avengers</li>
+></ul>
 
 ---
 
@@ -115,18 +101,15 @@ let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 ```
 
-{% captrue notice-3 %}
 
 ####RESULT
 
-```vue
-<ul>
-    <li>Mark Alan Ruffalo</li>
-    <li>51</li>
-    <li>avengers</li>
-</ul>
-```
+><ul>
+>    <li>Mark Alan Ruffalo</li>
+>    <li>51</li>
+>    <li>avengers</li>
+></ul>
 
-{% endcaptrue %}
+객체를 반복할 때 순서는 Object.keys()의 키 나열 순서에 따라 결정됩니다. 이 순서는 JavaScript 엔진 구현간에 일관적이지는 않습니다.
+{: .notice-danger}
 
-<div class="notice">{{ notice-3 | markdownify }}</div>

@@ -79,8 +79,6 @@ let value = true;
 let value = true;
 ```
 
-
-{% captrue notice-2 %}
 ####RESULT<br>
 ```html
 <p>Hi</p> 
@@ -88,9 +86,6 @@ let value = true;
 <li>목차1</li>
 <li>목차2</li>
 ```
-{% endcaptrue %}
-
-<div class="notice">{{ notice-2 | markdownify }}</div>
 
 ---
 
