@@ -80,7 +80,7 @@ let value = true;
 ```
 
 
-{% captrue notice-1 %}
+{% captrue notice-2 %}
 ####RESULT<br>
 ```html
 <p>Hi</p> 
@@ -90,7 +90,7 @@ let value = true;
 ```
 {% endcaptrue %}
 
-<div class="notice">{{ notice-1 | markdownify }}</div>
+<div class="notice">{{ notice-2 | markdownify }}</div>
 
 ---
 
@@ -115,8 +115,7 @@ let value = true;
 let value = false;
 ```
 
-####RESULT<br>``<div>이 문장은 보입니다.</div>``
-{: .notice}
+####RESULT<br>``<div>이 문장은 보입니다.</div>``{: .notice}
 
 ---
 
@@ -169,15 +168,12 @@ let value = false;
 let value = true;
 ```
 
-{% capture notice-2 %}
 ####RESULT<br>
 ```vue
 <label>사용자 이름</label>
 <input placeholder="사용자 이름을 입력">
 ```
-{% endcapture %}
 
-<div class="notice">{{notice-2 | markdownify}}</div>
 
 위에서 value 의 값이 false 로 바뀌게 된다면 이메일 입력 창으로 바뀔것입니다.<br>
 ```(value 가 뷰의 반응성을 얻은 데이터라고 가정합니다.)``` 그때 뷰는 ``<input>`` 태그를 처음부터 다시 그리는것이 아니라
@@ -226,12 +222,9 @@ v-show 디렉티브를 가지고있는 엘리먼트는 언제나 렌더링되며
 let value = false
 ```
 
-{% captrue notice-3 %}
 ####RESULT<br>
 ```vue
 <h1 style="display: none">안녕</h1>
 ```
-{% endcaptrue %}
 
-<div class="notice">{{ notice-3 | markdownify }}</div>
 
