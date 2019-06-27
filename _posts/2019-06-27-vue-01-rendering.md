@@ -26,20 +26,21 @@ tags:
 
  - 이중 중괄호를 이용한 방법
 
-```vue
-<template>
-  {{#if value}}
-    <h1>OK</h1>
-  {{/if}}
-</template>
+######html
 
-<script>
- let value = true; 
-</script>
+```html
+{{#if value}}
+  <h1>OK</h1>
+{{/if}}
 ```
 
-####RESULT <br>``<h1>OK</h1>``
-{: .notice}
+######javaScript
+
+```javascript
+let value = true; 
+```
+
+####RESULT <br>``<h1>OK</h1>``{: .notice}
 
 ---
 
@@ -55,26 +56,27 @@ tags:
 </sctipt>
 ```
 
-###RESULT<br>``<h1>OK</h1>``
-{: .notice}
+###RESULT<br>``<h1>OK</h1>``{: .notice}
 
 ---
 
 - 조건부 그룹 만들기
 
-```vue
-<template>
+######html
+
+```html
     <p>Hi</p>
     <template v-if="value">
         <h1>타이틀</h1>
         <li>목차1</li>
         <li>목차2</li>
     </template>
-</template>
+```
 
-<script>
-    let value = true;
-</script>
+######javaScript
+
+```javascript
+let value = true;
 ```
 
 
@@ -94,7 +96,9 @@ tags:
 
 - v-else 디렉티브를 이용한 방법
 
-```vue
+######html
+
+```html
 <template>
     <div v-if="value">
         value 가 false 이기때문에 이 문장은 안보입니다.
@@ -103,10 +107,12 @@ tags:
         이 문장은 보입니다.
     </div>
 </template>
+```
 
-<script>
-    let value = false;
-</script>
+######javaScript
+
+```javascript
+let value = false;
 ```
 
 ####RESULT<br>``<div>이 문장은 보입니다.</div>``
@@ -116,8 +122,9 @@ tags:
 
 - v-else-if 디렉티브를 이용한 방법
 
-```vue
-<template>
+######html
+
+```html
     <div  v-if="value === 1">
         이 값은 1입니다.
     </div>
@@ -127,15 +134,15 @@ tags:
     <div  v-if="value === 3">
         3일겁니다..?
     </div>
-</template>
-
-<script>
-    let value = 2;
-</script>
 ```
 
-####RESULT<br>```<div>2입니다.</div>```
-{: .notice}
+######javaScript
+
+```javascript
+    let value = 2;
+```
+
+####RESULT<br>```<div>2입니다.</div>```{: .notice}
 
 ---
 
@@ -143,8 +150,9 @@ tags:
 
  뷰는 엘리먼트를 효율적으로 렌더링합니다.
  
- ```vue
-<template>
+######html
+
+```html
     <template v-if="value">
         <label>사용자 이름</label>
         <input placeholder="사용자 이름을 입력">
@@ -153,11 +161,12 @@ tags:
         <label>이메일 입력</label>
         <input placeholder="이메일 입력">
     </template>
-</template>
+```
 
-<sctipt>
-    let value = true;
-</sctipt>
+######javaScript
+
+```javascript
+let value = true;
 ```
 
 {% capture notice-2 %}
@@ -177,8 +186,9 @@ tags:
 
  이를 제어하는 방법이 있습니다.
  
-```vue
-<template>
+ ######html
+ 
+```html
     <template v-if="value">
         <label>사용자 이름</label>
         <input placeholder="사용자 이름을 입력" key="username-input">
@@ -187,11 +197,12 @@ tags:
         <label>이메일 입력</label>
         <input placeholder="이메일 입력" key="email-input">
     </template>
-</template>
+```
 
-<sctipt>
+######javaScript
+
+```javascript
     let value = true;
-</sctipt>
 ```
 
 바로 위의 코드에서 바뀐건 ``key`` 속성이 추가되었을 뿐이지만 렌더링방식도 바뀌었습니다.<br>
@@ -203,14 +214,18 @@ tags:
 
 v-show 디렉티브를 가지고있는 엘리먼트는 언제나 렌더링되며 ``display`` 속성을 토글합니다.
 
-```vue
-<template>
-    <h1 v-show="value">안녕</h1>
-</template>
-<script>
-    let value = false
-</script>
+######html
+
+```html
+<h1 v-show="value">안녕</h1>
 ```
+
+######javaScript
+
+```javascript
+let value = false
+```
+
 {% captrue notice-3 %}
 ####RESULT<br>
 ```vue
