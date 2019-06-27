@@ -6,6 +6,7 @@ tags:
   - Vue
   - 뷰
   - FrontEnd
+  - 조건부 렌더링
 ---
 
 #Vue #01
@@ -17,8 +18,10 @@ tags:
  
  코드 바로 아래에 결과로 렌더링 될 HTML 코드를 기록해두었습니다
 
-``<template>``태그 안에는 뷰 템플릿 안의 코드가 들어있고 ``<script>`` 코드 안에는 스크립트 코드가 들어있다.
- 본래 ``<template>`` 안의 최상위 ``div`` 태그는 하나여야 하지만, 본 글에서는 편의를 위해 2개이상의 태그를 사용할 때도 있으니 주의 바랍니다.
+``<template>``태그 안에는 뷰 템플릿 안의 코드가 들어있고 
+``<script>`` 코드 안에는 스크립트 코드가 들어있습니다.
+ 본래 ``<template>`` 안의 최상위 ``div`` 태그는 하나여야 
+ 하지만, 본 글에서는 편의를 위해 2개이상의 태그를 사용할 때도 있으니 주의 바랍니다.
  
 
  - 이중 중괄호를 이용한 방법
@@ -35,7 +38,8 @@ tags:
 </script>
 ```
 
-> ``<h1>OK</h1>``
+***RESULT*** <br>``<h1>OK</h1>``
+{: .notice}
 
 ---
 
@@ -51,7 +55,8 @@ tags:
 </sctipt>
 ```
 
-> ``<h1>OK</h1>``
+***RESULT***<br>``<h1>OK</h1>``
+{: .notice}
 
 ---
 
@@ -72,12 +77,14 @@ tags:
 </script>
 ```
 
->```html
-><p>Hi</p> 
-><h1>타이틀</h1>
-><li>목차1</li>
-><li>목차2</li>
->```
+***RESULT***
+```html
+<p>Hi</p> 
+<h1>타이틀</h1>
+<li>목차1</li>
+<li>목차2</li>
+```
+{: .notice}
 
 ---
 
@@ -98,7 +105,8 @@ tags:
 </script>
 ```
 
-> ``<div>이 문장은 보입니다.</div>``
+***RESULT***``<div>이 문장은 보입니다.</div>``
+{: .notice}
 
 ---
 
@@ -122,7 +130,8 @@ tags:
 </script>
 ```
 
-> ```<div>2입니다.</div>```
+***RESULT***```<div>2입니다.</div>```
+{: .notice}
 
 ---
 
@@ -147,10 +156,12 @@ tags:
 </sctipt>
 ```
 
->```vue
-><label>사용자 이름</label>
-><input placeholder="사용자 이름을 입력">
->```
+***RESULT***
+```vue
+<label>사용자 이름</label>
+<input placeholder="사용자 이름을 입력">
+```
+{: .notice}
 
 위에서 value 의 값이 false 로 바뀌게 된다면 이메일 입력 창으로 바뀔것입니다.<br>
 ```(value 가 뷰의 반응성을 얻은 데이터라고 가정합니다.)``` 그때 뷰는 ``<input>`` 태그를 처음부터 다시 그리는것이 아니라
@@ -194,7 +205,9 @@ v-show 디렉티브를 가지고있는 엘리먼트는 언제나 렌더링되며
 </script>
 ```
 
->```vue
-><h1 style="display: none">안녕</h1>
->```
+***RESULT***
+```vue
+<h1 style="display: none">안녕</h1>
+```
+{: .notice}
 
