@@ -1,10 +1,9 @@
 ---
 title: "Vue #01 조건부 렌더링"
 categories:
-  - posts
+  - Vue
 tags:
   - Vue
-  - 뷰
   - FrontEnd
   - 조건부 렌더링
   
@@ -207,7 +206,7 @@ let value = true;
 
  이를 제어하는 방법이 있습니다.
  
- ###### html
+###### html
  
 ```html
     <template v-if="value">

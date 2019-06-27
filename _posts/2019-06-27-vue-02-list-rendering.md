@@ -1,10 +1,9 @@
 ---
 title: "Vue #02 리스트 렌더링"
 categories:
-  - posts
+  - Vue
 tags:
   - Vue
-  - 뷰
   - FrontEnd
   - 리스트 렌더링
 ---
