@@ -10,8 +10,6 @@ tags:
   
 ---
 
-# Vue #01
-
 조건부 렌더링
 ----
 
@@ -41,7 +39,14 @@ tags:
 let value = true; 
 ```
 
-#### RESULT <br>``<h1>OK</h1>``{: .notice}
+---
+
+#### RESULT <br>
+```html
+<h1>OK</h1>
+```
+
+---
 
 ---
 
@@ -57,7 +62,14 @@ let value = true;
 </sctipt>
 ```
 
-### RESULT<br>``<h1>OK</h1>``{: .notice}
+---
+
+### RESULT<br>
+```html
+<h1>OK</h1>
+```
+
+---
 
 ---
 
@@ -111,7 +123,15 @@ let value = true;
 let value = false;
 ```
 
-#### RESULT<br>``<div>이 문장은 보입니다.</div>``{: .notice}
+---
+
+#### RESULT<br>
+
+```html
+<div>이 문장은 보입니다.</div>
+```
+
+---
 
 ---
 
@@ -137,7 +157,14 @@ let value = false;
     let value = 2;
 ```
 
-#### RESULT<br>```<div>2입니다.</div>```{: .notice}
+---
+
+#### RESULT<br>
+```html
+<div>2입니다.</div>
+```
+
+---
 
 ---
 
@@ -163,6 +190,8 @@ let value = false;
 ```javascript
 let value = true;
 ```
+
+---
 
 #### RESULT<br>
 ```vue
@@ -222,5 +251,3 @@ let value = false
 ```vue
 <h1 style="display: none">안녕</h1>
 ```
-
-
