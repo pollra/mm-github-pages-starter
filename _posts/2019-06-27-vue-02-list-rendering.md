@@ -25,6 +25,43 @@ tags:
  
 - v-for 
 
-```vue
+######html
 
+```vue
+<ul v-for="(user, index) in arrUsers">
+    <li>index</li>
+    <li>{{user.name}}</li>
+    <li>{{user.age}}</li>
+</ul>
 ```
+
+######data
+
+```javascript
+let arrUser = [
+        {name:"Mark Alan Ruffalo", age:51},
+        {name:"Robert John Downey Jr", age:54}
+    ]
+```
+
+{% captrue notice-1 %}
+
+####RESULT
+
+```vue
+<ul>
+    <li>0</li>
+    <li>Mark Alan Ruffalo</li>
+    <li>51</li>
+</ul>
+<ul>
+    <li>1</li>
+    <li>Robert John Downey Jr</li>
+    <li>54</li>
+</ul>
+```
+
+{% endcaptrue %}
+
+<div class="notice">{{ notice-1 | markdownify }}</div>
+
