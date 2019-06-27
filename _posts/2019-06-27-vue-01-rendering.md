@@ -7,9 +7,10 @@ tags:
   - 뷰
   - FrontEnd
   - 조건부 렌더링
+  
 ---
 
-#Vue #01
+# Vue #01
 
 조건부 렌더링
 ----
@@ -26,7 +27,7 @@ tags:
 
  - 이중 중괄호를 이용한 방법
 
-######html
+###### html
 
 ```html
 {{#if value}}
@@ -34,13 +35,13 @@ tags:
 {{/if}}
 ```
 
-######javaScript
+###### javaScript
 
 ```javascript
 let value = true; 
 ```
 
-####RESULT <br>``<h1>OK</h1>``{: .notice}
+#### RESULT <br>``<h1>OK</h1>``{: .notice}
 
 ---
 
@@ -56,13 +57,13 @@ let value = true;
 </sctipt>
 ```
 
-###RESULT<br>``<h1>OK</h1>``{: .notice}
+### RESULT<br>``<h1>OK</h1>``{: .notice}
 
 ---
 
 - 조건부 그룹 만들기
 
-######html
+###### html
 
 ```html
     <p>Hi</p>
@@ -73,13 +74,13 @@ let value = true;
     </template>
 ```
 
-######javaScript
+###### javaScript
 
 ```javascript
 let value = true;
 ```
 
-####RESULT<br>
+#### RESULT<br>
 ```html
 <p>Hi</p> 
 <h1>타이틀</h1>
@@ -91,7 +92,7 @@ let value = true;
 
 - v-else 디렉티브를 이용한 방법
 
-######html
+###### html
 
 ```html
 <template>
@@ -104,19 +105,19 @@ let value = true;
 </template>
 ```
 
-######javaScript
+###### javaScript
 
 ```javascript
 let value = false;
 ```
 
-####RESULT<br>``<div>이 문장은 보입니다.</div>``{: .notice}
+#### RESULT<br>``<div>이 문장은 보입니다.</div>``{: .notice}
 
 ---
 
 - v-else-if 디렉티브를 이용한 방법
 
-######html
+###### html
 
 ```html
     <div  v-if="value === 1">
@@ -130,13 +131,13 @@ let value = false;
     </div>
 ```
 
-######javaScript
+###### javaScript
 
 ```javascript
     let value = 2;
 ```
 
-####RESULT<br>```<div>2입니다.</div>```{: .notice}
+#### RESULT<br>```<div>2입니다.</div>```{: .notice}
 
 ---
 
@@ -144,7 +145,7 @@ let value = false;
 
  뷰는 엘리먼트를 효율적으로 렌더링합니다.
  
-######html
+###### html
 
 ```html
     <template v-if="value">
@@ -157,13 +158,13 @@ let value = false;
     </template>
 ```
 
-######javaScript
+###### javaScript
 
 ```javascript
 let value = true;
 ```
 
-####RESULT<br>
+#### RESULT<br>
 ```vue
 <label>사용자 이름</label>
 <input placeholder="사용자 이름을 입력">
@@ -177,7 +178,7 @@ let value = true;
 
  이를 제어하는 방법이 있습니다.
  
- ######html
+ ###### html
  
 ```html
     <template v-if="value">
@@ -190,7 +191,7 @@ let value = true;
     </template>
 ```
 
-######javaScript
+###### javaScript
 
 ```javascript
     let value = true;
@@ -205,19 +206,19 @@ let value = true;
 
 v-show 디렉티브를 가지고있는 엘리먼트는 언제나 렌더링되며 ``display`` 속성을 토글합니다.
 
-######html
+###### html
 
 ```html
 <h1 v-show="value">안녕</h1>
 ```
 
-######javaScript
+###### javaScript
 
 ```javascript
 let value = false
 ```
 
-####RESULT<br>
+#### RESULT<br>
 ```vue
 <h1 style="display: none">안녕</h1>
 ```

@@ -9,7 +9,7 @@ tags:
   - 리스트 렌더링
 ---
 
-#Vue #02
+# Vue #02
 
 리스트 렌더링
 ---
@@ -25,7 +25,7 @@ tags:
  
 - v-for 
 
-######html
+###### html
 
 ```vue
 <ul v-for="(user, index) in arrUsers"><!-- in 대신 of 사용 가능-->
@@ -35,7 +35,7 @@ tags:
 </ul>
 ```
 
-######data
+###### data
 
 ```javascript
 let arrUser = [
@@ -44,8 +44,7 @@ let arrUser = [
     ]
 ```
 
-
-####RESULT
+#### RESULT
 
 ><ul>
 >    <li>0</li>
@@ -62,7 +61,7 @@ let arrUser = [
 
 - v-for 와 객체
 
-######html
+###### html
 
 ```vue
 <ul v-for="obj in object_h"><!-- in 대신 of 사용 가능-->
@@ -70,14 +69,14 @@ let arrUser = [
 </ul>
 ```
 
-######data
+###### data
 
 ```javascript
 let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 ```
 
 
-####RESULT
+#### RESULT
 
 ><ul>
 >    <li>Mark Alan Ruffalo</li>
@@ -87,7 +86,7 @@ let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 
 ---
 
-######html
+###### html
 
 ```vue
 <ul v-for="(val, key) in object_h"><!-- in 대신 of 사용 가능-->
@@ -95,14 +94,14 @@ let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 </ul>
 ```
 
-######data
+###### data
 
 ```javascript
 let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 ```
 
 
-####RESULT
+#### RESULT
 
 ><ul>
 >    <li>Mark Alan Ruffalo</li>
