@@ -1,5 +1,5 @@
 ---
-title: "Vue #01 렌더링"
+title: "Vue #02 리스트 렌더링"
 categories:
   - posts
 tags:
@@ -28,8 +28,8 @@ tags:
 ######html
 
 ```vue
-<ul v-for="(user, index) in arrUsers">
-    <li>index</li>
+<ul v-for="(user, index) in arrUsers"><!-- in 대신 of 사용 가능-->
+    <li>{{index}}</li>
     <li>{{user.name}}</li>
     <li>{{user.age}}</li>
 </ul>
@@ -65,3 +65,68 @@ let arrUser = [
 
 <div class="notice">{{ notice-1 | markdownify }}</div>
 
+---
+
+- v-for 와 객체
+
+######html
+
+```vue
+<ul v-for="obj in object_h"><!-- in 대신 of 사용 가능-->
+    <li>{{obj}}</li>
+</ul>
+```
+
+######data
+
+```javascript
+let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
+```
+
+{% captrue notice-2 %}
+
+####RESULT
+
+```vue
+<ul>
+    <li>Mark Alan Ruffalo</li>
+    <li>51</li>
+    <li>avengers</li>
+</ul>
+```
+
+{% endcaptrue %}
+
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
+---
+
+######html
+
+```vue
+<ul v-for="(val, key) in object_h"><!-- in 대신 of 사용 가능-->
+    <li>{{key}}: {{val}}</li>
+</ul>
+```
+
+######data
+
+```javascript
+let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
+```
+
+{% captrue notice-3 %}
+
+####RESULT
+
+```vue
+<ul>
+    <li>Mark Alan Ruffalo</li>
+    <li>51</li>
+    <li>avengers</li>
+</ul>
+```
+
+{% endcaptrue %}
+
+<div class="notice">{{ notice-3 | markdownify }}</div>

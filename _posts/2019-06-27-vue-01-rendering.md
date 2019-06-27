@@ -1,5 +1,5 @@
 ---
-title: "Vue #01 렌더링"
+title: "Vue #01 조건부 렌더링"
 categories:
   - posts
 tags:
