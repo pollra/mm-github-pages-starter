@@ -46,16 +46,26 @@ let arrUser = [
 
 #### RESULT
 
-><ul>
->    <li>0</li>
->    <li>Mark Alan Ruffalo</li>
->    <li>51</li>
-></ul>
-><ul>
->    <li>1</li>
->    <li>Robert John Downey Jr</li>
->    <li>54</li>
-></ul>
+{% capture notice-2 %}
+#### New Site Features
+
+```vue
+<ul>
+    <li>0</li>
+    <li>Mark Alan Ruffalo</li>
+    <li>51</li>
+</ul>
+<ul>
+    <li>1</li>
+    <li>Robert John Downey Jr</li>
+    <li>54</li>
+</ul>
+```
+{% endcapture %}
+
+<div class="notice">
+  {{ notice-2 | markdownify }}
+</div>
 
 ---
 
