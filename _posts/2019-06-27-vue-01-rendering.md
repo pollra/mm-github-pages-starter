@@ -9,6 +9,8 @@ tags:
   
 ---
 
+*** 출처 : [Vue.js Tutorial](https://kr.vuejs.org/v2/guide/list.html) ***
+
 조건부 렌더링
 ----
 
