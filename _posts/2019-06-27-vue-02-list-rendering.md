@@ -125,9 +125,9 @@ let object_h={name:"Mark Alan Ruffalo", age:51, starring:"avengers"}
 ```
 
 ---
-
 ---
 
-객체를 반복할 때 순서는 Object.keys()의 키 나열 순서에 따라 결정됩니다. 이 순서는 JavaScript 엔진 구현간에 일관적이지는 않습니다.
-{: .notice--danger}
+***객체를 반복할 때 순서는 Object.keys()의 키
+ 나열 순서에 따라 결정됩니다. 이 순서는 JavaScript
+  엔진 구현간에 일관적이지는 않습니다.***
 
