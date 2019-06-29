@@ -6,7 +6,7 @@ tags:
   - 이벤트
 ---
 
-*** 출처 : [Vue.js Tutorial](https://kr.vuejs.org/v2/guide/list.html) ***
+***출처 : [Vue.js Tutorial](https://kr.vuejs.org/v2/guide/list.html)***
 
 #### 이벤트 청취
 
@@ -113,9 +113,11 @@ example2.say('hi?')
 
 #### 키 수식어
 
-######사용법
+###### 사용법
 
-`<input v-on:keyup.enter="submit">`
+``` vue
+<input v-on:keyup.enter="submit">
+```
 
 
 수식어 | 설명
@@ -167,8 +169,17 @@ KeyBoard.key 가 지원되는 브라우저가 크롬과 오페라 밖에 없습�
 `.meta`| windows 에선 `windows` 키 / macintosh 에선 `commend` 키
 
 ###### 사용법 <br>
-ALT + C `<input @keyup.alt.67="clear">`<br>
-CTRL + CLICK `<div @click.ctrl="doSomething">Do something</div>`
+ALT + C 
+
+```vue
+<input @keyup.alt.67="clear">
+```
+
+CTRL + CLICK 
+
+```vue
+<div @click.ctrl="doSomething">Do something</div>
+```
 
 ---
 ---
@@ -177,13 +188,19 @@ CTRL + CLICK `<div @click.ctrl="doSomething">Do something</div>`
 
 `.exact` 수식어는 정확한 조합이 눌려야만 실행 가능해지는 수식어 입니다.<br>
 CTRL + (ALT or SHIFT) 어떤 키와 조합해도 메소드가 실행됨<br>
-`<button @click.ctrl="alertAction('ctrl')">ㅇㅅㅇ!!!</button>`
+```vue
+<button @click.ctrl="alertAction('ctrl')">ㅇㅅㅇ!!!</button>
+```
 
 CTRL 키 이외에 다른 키를 누르면 메소드가 실행되지 않음<br>
-`<button @click.ctrl.exact="alertAction('ctrl')">ㅇㅂㅇ...</button>`
+```vue
+<button @click.ctrl.exact="alertAction('ctrl')">ㅇㅂㅇ...</button>
+```
 
 시스템 키가 눌리지 않은 경우에만 작동<br>
-`<button @click.exact="alertAction('ctrl')">ㅇㅁㅇ???</button>`
+```vue
+<button @click.exact="alertAction('ctrl')">ㅇㅁㅇ???</button>
+```
 
 ---
 ---
